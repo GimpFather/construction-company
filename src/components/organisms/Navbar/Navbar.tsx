@@ -1,9 +1,10 @@
 import NavbarHeadSection from "@/components/molecules/Navbar/NavbarHeadSection";
 import NavbarLinksSection from "@/components/molecules/Navbar/NavbarLinksSection";
-import { Container, useTheme } from "@mui/material";
+import { Container, useMediaQuery, useTheme } from "@mui/material";
 
 const Navbar = () => {
-  const { palette } = useTheme();
+  const { palette, breakpoints } = useTheme();
+  const isDesktop = useMediaQuery(breakpoints.up("sm"));
   return (
     <>
       <Container maxWidth="xl">
@@ -16,7 +17,7 @@ const Navbar = () => {
           backgroundColor: palette.primary.main,
         }}
       >
-        <NavbarLinksSection />
+        {isDesktop && <NavbarLinksSection />}
       </Container>
     </>
   );
