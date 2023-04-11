@@ -40,6 +40,7 @@ const NavbarLinksSection = () => {
         {links.map((link, key) => {
           return (
             <NavbarLink
+              key={key}
               caption={link.caption}
               onClick={() => handleOnClick(link.link, key)}
               selected={link.link === router.pathname}
