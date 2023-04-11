@@ -1,38 +1,17 @@
 import { createTheme } from "@mui/material";
 
-const colors = {
-  pastelPink: "#ffcad4",
-  stormGray: "#696d7d",
-  pastelWhite: "#FAF8F6",
-  peach: "#ffe5d9",
-  leafGreen: "#d8e2dc",
-  pinkyRose: "#f4acb7",
-  navyBlue: "#B8DAD9",
-};
-
 export const theme = createTheme({
   palette: {
     primary: {
-      main: colors.pinkyRose,
+      main: "#3d5a80",
+      light: "#98c1d9",
     },
     secondary: {
-      main: colors.pastelPink,
-    },
-    error: {
-      main: colors.pinkyRose,
-    },
-    warning: {
-      main: colors.peach,
-    },
-    info: {
-      main: colors.navyBlue,
-    },
-    success: {
-      main: colors.leafGreen,
+      main: "#ee6c4d",
     },
     common: {
-      black: colors.stormGray,
-      white: colors.pastelWhite,
+      black: "#293241",
+      white: "#FAF8F6",
     },
   },
 });
