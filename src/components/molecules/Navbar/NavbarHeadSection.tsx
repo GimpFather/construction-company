@@ -21,6 +21,7 @@ const NavbarHeadSection = () => {
         damping: 40,
       }}
       justifyContent="space-between"
+      alignItems="center"
       sx={{
         paddingY: 6,
       }}

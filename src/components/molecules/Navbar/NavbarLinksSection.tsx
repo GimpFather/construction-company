@@ -1,29 +1,11 @@
 import NavbarLink from "@/components/atoms/Navbar/NavbarLink";
+import { links } from "@/data/links";
 import { Container } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
 const NavbarLinksSection = () => {
-  const links = [
-    {
-      caption: "Strona Główna",
-      link: "/",
-    },
-    {
-      caption: "Projekty",
-      link: "/projekty",
-    },
-    {
-      caption: "O nas",
-      link: "/o-nas",
-    },
-    {
-      caption: "Kontakt",
-      link: "/kontakt",
-    },
-  ];
-
   const [selected, setSelected] = useState(0);
   const router = useRouter();
 
@@ -31,8 +13,6 @@ const NavbarLinksSection = () => {
     setSelected(key);
     router.push(path);
   };
-
-  console.log(router.pathname);
 
   return (
     <Container maxWidth="xl">
