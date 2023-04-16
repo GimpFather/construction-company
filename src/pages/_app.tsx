@@ -6,6 +6,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { theme } from "@/styles/defaultTheme";
 import type { AppProps } from "next/app";
 import Navbar from "@/components/organisms/Navbar/Navbar";
+import "../styles/swiper.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
