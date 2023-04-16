@@ -3,6 +3,7 @@ import Slider from "@/components/organisms/Slider/Slider";
 import SliderSubtitle from "@/components/atoms/SliderSubtitle/SliderSubtitle";
 import Container from "@mui/material/Container";
 import UnderlinedText from "@/components/atoms/UnderlinedText/UnderlinedText";
+import OurServices from "@/components/organisms/OurServices/OurServices";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Container maxWidth={false} disableGutters sx={{ paddingY: 1 }}>
         <Slider />
         <SliderSubtitle />
+        <OurServices />
       </Container>
     </>
   );
