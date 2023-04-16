@@ -16,7 +16,7 @@ const NavbarLinksSection = () => {
 
   return (
     <Container maxWidth="xl">
-      <Grid2 container spacing={2}>
+      <Grid2 container spacing={2} sx={{ paddingY: 1 }}>
         {links.map((link, key) => {
           return (
             <NavbarLink

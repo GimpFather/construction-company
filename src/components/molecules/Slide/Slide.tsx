@@ -19,6 +19,7 @@ const Slide = ({ src, width, height }: SlideProps) => {
         height={height}
         alt="Stock 1"
         style={{ objectFit: "cover", width: "100%", height: "100%" }}
+        loading="lazy"
       />
     </Box>
   );
