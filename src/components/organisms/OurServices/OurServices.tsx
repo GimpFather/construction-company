@@ -11,7 +11,7 @@ const OurServices = () => {
       justifyContent="center"
       alignItems={{ xs: "center", md: "flex-start" }}
       spacing={{ xs: 6 }}
-      mt={8}
+      sx={{ marginY: 8 }}
     >
       <ServiceBlock
         title="Planowanie"
