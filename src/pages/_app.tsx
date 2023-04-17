@@ -7,14 +7,17 @@ import { theme } from "@/styles/defaultTheme";
 import type { AppProps } from "next/app";
 import Navbar from "@/components/organisms/Navbar/Navbar";
 import "../styles/swiper.css";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <CssBaseline>
-      <ThemeProvider theme={theme}>
-        <Navbar />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </CssBaseline>
+    <ParallaxProvider>
+      <CssBaseline>
+        <ThemeProvider theme={theme}>
+          <Navbar />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </CssBaseline>
+    </ParallaxProvider>
   );
 }
