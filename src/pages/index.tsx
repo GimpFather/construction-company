@@ -2,7 +2,6 @@ import PageHeadTag from "@/components/atoms/PageHeadTag/PageHeadTag";
 import Slider from "@/components/organisms/Slider/Slider";
 import SliderSubtitle from "@/components/atoms/SliderSubtitle/SliderSubtitle";
 import Container from "@mui/material/Container";
-import UnderlinedText from "@/components/atoms/UnderlinedText/UnderlinedText";
 import OurServices from "@/components/organisms/OurServices/OurServices";
 
 export default function Home() {

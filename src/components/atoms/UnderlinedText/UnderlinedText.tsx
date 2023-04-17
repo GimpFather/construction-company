@@ -1,4 +1,4 @@
-import { Box, BoxProps, Typography, styled, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { motion } from "framer-motion";
 
 interface UnderlinedTextProps {

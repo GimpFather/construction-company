@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import UnderlinedText from "../../atoms/UnderlinedText/UnderlinedText";
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 
 interface ServiceBlockProps {
   title: string;
