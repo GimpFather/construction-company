@@ -1,11 +1,23 @@
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
+import { motion } from "framer-motion";
 
 const SliderSubtitle = () => {
   const { palette } = useTheme();
   return (
     <Box sx={{ backgroundColor: palette.primary.main }}>
       <Container maxWidth="xl" sx={{ paddingY: 1 }}>
-        <Grid container alignItems="center">
+        <Grid
+          container
+          alignItems="center"
+          component={motion.div}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            type: "just",
+            stiffness: 200,
+            damping: 40,
+          }}
+        >
           <Grid
             item
             xs={12}
