@@ -8,16 +8,18 @@ import type { AppProps } from "next/app";
 import Navbar from "@/components/organisms/Navbar/Navbar";
 import "../styles/swiper.css";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <ParallaxProvider>
-      <CssBaseline>
-        <ThemeProvider theme={theme}>
-          <Navbar />
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </CssBaseline>
-    </ParallaxProvider>
-  );
+	return (
+		<ParallaxProvider>
+			<CssBaseline>
+				<Analytics />
+				<ThemeProvider theme={theme}>
+					<Navbar />
+					<Component {...pageProps} />
+				</ThemeProvider>
+			</CssBaseline>
+		</ParallaxProvider>
+	);
 }
