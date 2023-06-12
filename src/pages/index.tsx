@@ -5,7 +5,7 @@ import Container from "@mui/material/Container";
 import OurServices from "@/components/organisms/OurServices/OurServices";
 import ParalaxImage from "@/components/atoms/ParalaxImage/ParalaxImage";
 import Image from "../data/images/stock-image-4.jpg";
-import { Box, Button, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import { useRouter } from "next/router";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
 
 	return (
 		<>
-			<PageHeadTag title="index" desc="index" />
+			<PageHeadTag title="Forte Garaże" desc="Forte Garaże" />
 			<Container maxWidth={false} disableGutters sx={{ paddingTop: 1 }}>
 				<Slider />
 				<SliderSubtitle />

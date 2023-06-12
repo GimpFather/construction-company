@@ -1,15 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import PageHeadTag from "@/components/atoms/PageHeadTag/PageHeadTag";
 import {
-	Box,
-	Dialog,
-	DialogContent,
-	DialogTitle,
-	IconButton,
 	ImageList,
 	ImageListItem,
 	ImageListItemBar,
-	Typography,
 	useMediaQuery,
 	useTheme,
 } from "@mui/material";
@@ -24,7 +18,7 @@ export default function Projekty() {
 
 	return (
 		<>
-			<PageHeadTag title="index" desc="index" />
+			<PageHeadTag title="Projekty" desc="Projekty" />
 			<Container maxWidth="xl">
 				<ImageList
 					variant="quilted"
