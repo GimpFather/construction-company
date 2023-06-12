@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import PageHeadTag from "@/components/atoms/PageHeadTag/PageHeadTag";
 import {
+	Box,
 	ImageList,
 	ImageListItem,
 	ImageListItemBar,
@@ -27,7 +28,7 @@ export default function Projekty() {
 					sx={{ overflow: "hidden" }}
 				>
 					{projects.map((item, key) => (
-						<>
+						<Box key={key}>
 							<ImageListItem
 								component={motion.div}
 								initial={{ scale: 0 }}
@@ -54,7 +55,7 @@ export default function Projekty() {
 									title={item.title}
 								/>
 							</ImageListItem>
-						</>
+						</Box>
 					))}
 				</ImageList>
 			</Container>

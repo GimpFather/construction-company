@@ -46,7 +46,7 @@ export default function Kontakt() {
 							startIcon={<PhoneIcon sx={{ color: palette.common.white }} />}
 						>
 							<Typography variant="body1" sx={{ color: palette.common.white }}>
-								+ 48 779 213 769
+								+48 570 570 303
 							</Typography>
 						</Button>
 					</Box>
@@ -71,7 +71,7 @@ export default function Kontakt() {
 							startIcon={<EmailIcon sx={{ color: palette.common.white }} />}
 						>
 							<Typography variant="body1" sx={{ color: palette.common.white }}>
-								fortegaraze@gmail.com
+								forte@interia.eu
 							</Typography>
 						</Button>
 					</Box>

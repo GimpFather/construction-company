@@ -16,7 +16,7 @@ export const projects = [
 		link: "https://media.discordapp.net/attachments/486189334307930117/1109437388473770074/Render2.png",
 	},
 	{
-		title: "Ściana",
+		title: "Elewacja",
 		link: "https://media.discordapp.net/attachments/486189334307930117/1109437388738019338/elewacja.jpeg",
 	},
 	{
